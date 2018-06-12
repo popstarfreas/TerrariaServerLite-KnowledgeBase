@@ -2,7 +2,8 @@
 TSL currently has 3 world formats: Schematic, Dynamic Dictionary and Fixed Dictionary.
 
 ## Startup Mem vs GC'd Mem
- * Startup Memory is the amount of memory required to start the server.
+ * Startup Memory is the amount of memory used while starting the server on a machine with 12 GB RAM
+   * It's possible the GC may reduce this value on a machine that has more restricted RAM total
  * GC'd Memory is the amount of memory required to run the server after the initial Garbage Collector sweep (10 seconds or so)
 
 ## Note
