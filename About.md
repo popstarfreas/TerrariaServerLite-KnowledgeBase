@@ -26,3 +26,6 @@ When the monolothic server crashes, all users are disconnected. This is a major 
 
 #### Updating
 Small updates or changes also require the same handling as a crash. Everyone disconnects and the server is restarting. With a distributed setup and TSL/Dimensions reloadable architecture, it's possible that an update will not require a restart at all.
+
+### But why use TSL for this?
+If you're splitting up your architecture into multiple server instances, let's say 10, then there is an overhead with each one, a certain amount of RAM per world and CPU usage for world simulation. TSL allows you to use microworlds that take next to no RAM usage and use next to 0% CPU usage with a few players connected. This almost elimates the overhead of such a setup and makes it beneficial.
